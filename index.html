@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>comment service v2</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container__main">
+      <h1>comment service v2</h1>
+
+      <div class="comments__leaving-main">
+        <div class="comments__leaving">
+          <h2>leave a comment</h2>
+          <input type="checkbox" id="showName" />
+          <label for="showName">show my name in comment</label>
+          <input type="text" id="name" placeholder="enter your name" /><br />
+          <input
+            type="text"
+            id="avatar"
+            placeholder="enter your avatar link"
+          /><br />
+          <textarea id="message" placeholder="leave a comment"></textarea><br />
+          <button onclick="addComment()">send</button>
+        </div>
+
+        <div class="comments-main">
+          <h2>chat</h2>
+          <div id="comments"></div>
+        </div>
+      </div>
+
+      <div class="creator__link-container">
+        <p>
+          site was made by
+          <a href="https://t.me/nika_sirenn" id="creator">nika siren</a>
+        </p>
+      </div>
+    </div>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

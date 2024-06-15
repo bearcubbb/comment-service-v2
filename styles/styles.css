@@ -1,0 +1,117 @@
+.container__main {
+    display: grid;
+    height: 940px;
+    padding: 40px;
+    margin: 40px;
+
+    justify-items: center;
+    justify-content: center;
+}
+
+.comments__leaving-main {
+    display: flex;
+    flex-direction: row;
+    gap: 50%;
+    justify-content: flex-start;
+}
+
+.comments-main {
+    padding: 2%;
+    margin: 4%;
+}
+
+h1,
+h2,
+h3,
+p,
+#name,
+#avatar,
+#message,
+button {
+    font-family: "Montserrat Alternates", sans-serif;
+    color: #63a2d6;
+}
+
+h1 {
+
+    font-weight: bold;
+    font-style: normal;
+    font-size: clamp(1.25rem, 0.536rem + 1.905vw, 2.25rem);
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 5%;
+    padding-right: 1%;
+
+    text-wrap: nowrap;
+}
+
+h2 {
+    font-size: clamp(1rem, 0.643rem + 0.952vw, 1.5rem);
+}
+
+h3 {
+    font-size: clamp(0.813rem, 0.634rem + 0.476vw, 1.063rem);
+}
+
+p {
+    font-weight: 400;
+    font-style: italic;
+
+    text-align: center;
+}
+
+#name,
+#avatar,
+#message {
+    padding: 2%;
+    margin: 4%;
+
+    border: 1px solid #B9D0DF;
+    color: #63a2d6;
+}
+
+button {
+    background-color: #B9D0DF;
+    border: 1px solid #B9D0DF;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.7rem;
+    margin: 4%;
+    outline: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    touch-action: manipulation;
+    transition: 1s;
+    user-select: none;
+    -webkit-user-select: none;
+    width: 7vw;
+}
+
+#creator {
+    color: #63a2d6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.creator__link {
+    text-align: center;
+}
+
+.creator__link-container {
+    text-align: center;
+}
+
+#name,
+#avatar,
+#message,
+#comments,
+button,
+.creator__link-container {
+    font-size: clamp(0.5rem, 0.232rem + 0.714vw, 0.875rem);
+}
